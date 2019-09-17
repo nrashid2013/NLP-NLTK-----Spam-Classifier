@@ -42,6 +42,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random
 from sklearn.naive_bayes import MultinomialNB
 spam_detect_model = MultinomialNB().fit(X_train, y_train)
 
+#Prediction
 y_pred = spam_detect_model.predict(X_test)
 
 #Confusion metrics 
